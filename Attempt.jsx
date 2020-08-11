@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Attempt extends Component {
-  render() {
-    const person = this.props.person;
-
+const Attempt = ({ attemptInfo }) => {
     return (
-      <li>
-        <div>{this.props.attemptInfo.attempt}</div>
-        <div>{this.props.attemptInfo.result}</div>
-      </li>
+        <li>
+            <div>{attemptInfo.attempt}</div>
+            <div>{attemptInfo.result}</div>
+        </li>
     );
-  };
-}
+};
 
 export default Attempt;
